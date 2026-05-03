@@ -12,7 +12,9 @@ body {
    HERO (ONLY SYSTEM - FIXED)
 ========================= */
 .hero {
-    background: red !important;
+    background: none !important;
+    background-color: yellow !important;
+    min-height: 300px;
 }
 
 /* OVERLAY */
