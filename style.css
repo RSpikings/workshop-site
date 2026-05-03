@@ -9,7 +9,7 @@ body {
 }
 
 /* =========================
-   HERO (ONLY SYSTEM - FIXED)
+   HERO
 ========================= */
 .hero {
     position: relative;
@@ -165,16 +165,13 @@ footer {
     padding: 60px 20px;
 }
 
-/* GRID */
 .sponsor-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 30px;
-    align-items: center;
     margin-top: 20px;
 }
 
-/* CARD */
 .sponsor-card {
     background: white;
     border-radius: 12px;
@@ -188,13 +185,11 @@ footer {
     min-height: 120px;
 }
 
-/* HOVER EFFECT */
 .sponsor-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
-/* LOGOS */
 .sponsor-card img {
     max-width: 100%;
     max-height: 80px;
@@ -206,9 +201,19 @@ footer {
 .sponsor-card:hover img {
     filter: grayscale(0%);
 }
+
 /* =========================
-   TIMELINE
+   TIMELINE (PREVIOUS)
 ========================= */
+#previous {
+    background: #1f2d3d;
+    color: white;
+}
+
+#previous h2 {
+    color: white;
+}
+
 .timeline {
     border-left: 3px solid #2980b9;
     padding-left: 20px;
@@ -226,7 +231,7 @@ footer {
     top: 5px;
     width: 15px;
     height: 15px;
-    background: #2980b9;
+    background: #4aa3df;
     border-radius: 50%;
 }
 
@@ -257,35 +262,4 @@ footer {
     background: white;
     padding: 5px;
     border-radius: 5px;
-}
-#previous {
-    background: #1f2d3d;
-    color: white;
-}
-
-#previous h2 {
-    color: white;
-}
-
-/* timeline cards */
-.timeline {
-    border-left: 3px solid #4aa3df;
-    padding-left: 20px;
-}
-
-.event {
-    margin-bottom: 25px;
-    position: relative;
-    padding-left: 15px;
-}
-
-.event::before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    background: #4aa3df;
-    border-radius: 50%;
 }
