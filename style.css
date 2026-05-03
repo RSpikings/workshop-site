@@ -180,3 +180,38 @@ footer {
     background: #2980b9;
     border-radius: 50%;
 }
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* LOGO ROW */
+.logo-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* MAIN LOGO */
+.main-logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* INSTITUTION LOGOS */
+.institution-logos {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.institution-logos img {
+    height: 50px;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
