@@ -1,37 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<title>Venue</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venue 2026 - Workshop on the Geology of Ecuador</title>
+
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 </head>
+
 <body>
 
+<!-- LANGUAGE SWITCH -->
 <div class="lang-switch">
-<button onclick="switchLang('en')">EN</button>
-<button onclick="switchLang('es')">ES</button>
+    <button onclick="switchLang('en')">EN</button>
+    <button onclick="switchLang('es')">ES</button>
 </div>
 
-<header><h1>Venue 2026</h1></header>
+<!-- HERO HEADER -->
+<header class="hero">
 
+    <div class="overlay"></div>
+
+    <h1 class="en">Venue 2026</h1>
+    <h1 class="es hidden">Sede 2026</h1>
+
+    <p class="en">Workshop location: Quito / Ecuador (update if needed)</p>
+    <p class="es hidden">Lugar del taller: Quito / Ecuador (actualizar si es necesario)</p>
+
+</header>
+
+<!-- NAVIGATION -->
 <nav>
-<a href="index.html">Home</a>
-<a href="previous.html">Previous</a>
-<a href="venue.html">Venue 2026</a>
-<a href="sponsors.html">Sponsors</a>
+    <a href="index.html">Home</a>
+    <a href="previous.html">Previous</a>
+    <a href="venue.html">Venue 2026</a>
+    <a href="sponsors.html">Sponsors</a>
 </nav>
 
+<!-- VENUE INFO -->
 <section>
-<p class="en">Details coming soon.</p>
-<p class="es hidden">Detalles próximamente.</p>
+<h2 class="en">Conference Venue</h2>
+<h2 class="es hidden">Sede del Congreso</h2>
+
+<p class="en">
+The workshop will take place at a geological institution / university in Ecuador.
+Please update this section with the exact venue name, address, and logistics.
+</p>
+
+<p class="es hidden">
+El taller se llevará a cabo en una institución geológica / universidad en Ecuador.
+Actualice esta sección con el nombre exacto, dirección y logística.
+</p>
 </section>
+
+<!-- MAP SECTION -->
+<section>
+<h2 class="en">Location</h2>
+<h2 class="es hidden">Ubicación</h2>
+
+<p class="en">Map placeholder (you can embed Google Maps here)</p>
+<p class="es hidden">Espacio para mapa (puedes incrustar Google Maps aquí)</p>
+
+<!-- OPTIONAL: Google Maps embed -->
+<!--
+<iframe src="YOUR_GOOGLE_MAPS_LINK" width="100%" height="400"></iframe>
+-->
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Workshop on the Geology of Ecuador</p>
+</footer>
 
 </body>
 </html>
-<iframe 
-    src="https://www.google.com/maps?q=Quito,Ecuador&output=embed"
-    width="100%" 
-    height="300" 
-    style="border:0; border-radius:10px;">
-</iframe>
