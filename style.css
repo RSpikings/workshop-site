@@ -12,14 +12,7 @@ body {
    HERO (ONLY SYSTEM - FIXED)
 ========================= */
 .hero {
-    position: relative;
-    background: url('Boudinaged-wide-shear-zone.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    overflow: hidden;
+    background: red !important;
 }
 
 /* OVERLAY */
