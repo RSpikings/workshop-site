@@ -236,3 +236,34 @@ footer {
     padding: 5px;
     border-radius: 5px;
 }
+#previous {
+    background: #1f2d3d;
+    color: white;
+}
+
+#previous h2 {
+    color: white;
+}
+
+/* timeline cards */
+.timeline {
+    border-left: 3px solid #4aa3df;
+    padding-left: 20px;
+}
+
+.event {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.event::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: #4aa3df;
+    border-radius: 50%;
+}
