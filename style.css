@@ -155,35 +155,52 @@ footer {
 /* =========================
    SPONSORS
 ========================= */
-.sponsors {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+#sponsors {
+    background: linear-gradient(135deg, #f5f7fa, #e9eef5);
+    padding: 60px 20px;
 }
 
+/* GRID */
 .sponsor-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 30px;
-    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
+/* CARD */
 .sponsor-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
     text-align: center;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    width: 200px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
 }
 
+/* HOVER EFFECT */
+.sponsor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* LOGOS */
 .sponsor-card img {
     max-width: 100%;
-    margin-bottom: 10px;
+    max-height: 80px;
+    object-fit: contain;
+    filter: grayscale(10%);
+    transition: filter 0.3s ease;
 }
 
+.sponsor-card:hover img {
+    filter: grayscale(0%);
+}
 /* =========================
    TIMELINE
 ========================= */
