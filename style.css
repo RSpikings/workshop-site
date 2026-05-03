@@ -88,3 +88,54 @@ footer {
 .hidden {
     display: none;
 }
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #cf711f;
+}
+
+/* INFO GRID */
+.info-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #ecf0f1;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card img {
+    border-radius: 50%;
+}
+
+/* SPONSORS */
+.sponsors {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
