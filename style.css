@@ -209,33 +209,65 @@ footer {
    TIMELINE (PREVIOUS)
 ========================= */
 #previous {
-    background: #1f2d3d;
-    color: white;
+    background: linear-gradient(135deg, #1c2a3a, #111a24);
+    color: #ffffff;
+    padding: 70px 20px;
 }
 
 #previous h2 {
-    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
 }
 
+/* TIMELINE CONTAINER */
 .timeline {
-    border-left: 3px solid #2980b9;
-    padding-left: 20px;
-}
-
-.event {
-    margin-bottom: 30px;
     position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 30px;
+    border-left: 3px solid #4aa3df;
 }
 
+/* EACH EVENT */
+.event {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.event:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* DOT ON TIMELINE */
 .event::before {
     content: "";
     position: absolute;
-    left: -11px;
-    top: 5px;
-    width: 15px;
-    height: 15px;
+    left: -41px;
+    top: 25px;
+    width: 14px;
+    height: 14px;
     background: #4aa3df;
     border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(74, 163, 223, 0.2);
+}
+
+/* TITLE */
+.event h3 {
+    margin: 0 0 10px;
+    color: #4aa3df;
+}
+
+/* TEXT */
+.event p {
+    margin: 5px 0;
+    color: #e0e6ef;
 }
 
 /* =========================
