@@ -1,3 +1,6 @@
+/* =========================
+   BASE
+========================= */
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     margin: 0;
@@ -5,23 +8,40 @@ body {
     color: #2c3e50;
 }
 
-/* HERO HEADER */
-header {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('Boudinaged-wide-shear-zone.jpg');
+/* =========================
+   HERO (ONLY SYSTEM - FIXED)
+========================= */
+.hero {
+    position: relative;
+    background: url('Boudinaged-wide-shear-zone.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 20px;
     text-align: center;
+    padding: 100px 20px;
+    overflow: hidden;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
+/* OVERLAY */
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
 }
 
-/* NAVIGATION */
+/* CONTENT ABOVE OVERLAY */
+.hero h1,
+.hero p,
+.hero .btn,
+.hero .logo-bar {
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
 nav {
     background: white;
     display: flex;
@@ -41,7 +61,9 @@ nav a:hover {
     color: #2980b9;
 }
 
-/* CONTENT */
+/* =========================
+   SECTIONS
+========================= */
 section {
     max-width: 1000px;
     margin: 40px auto;
@@ -55,7 +77,9 @@ h2 {
     margin-top: 0;
 }
 
-/* LANGUAGE SWITCH */
+/* =========================
+   LANGUAGE SWITCH
+========================= */
 .lang-switch {
     position: fixed;
     top: 15px;
@@ -75,7 +99,9 @@ button:hover {
     background: #1f6391;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
     text-align: center;
     padding: 30px;
@@ -84,11 +110,16 @@ footer {
     margin-top: 40px;
 }
 
-/* UTIL */
+/* =========================
+   UTIL
+========================= */
 .hidden {
     display: none;
 }
-/* BUTTONS */
+
+/* =========================
+   BUTTONS
+========================= */
 .btn {
     display: inline-block;
     margin: 10px;
@@ -104,15 +135,9 @@ footer {
     background: #cf711f;
 }
 
-/* INFO GRID */
-.info-grid {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    background: #ecf0f1;
-}
-
-/* CARDS */
+/* =========================
+   CARDS (SPEAKERS)
+========================= */
 .cards {
     display: flex;
     gap: 20px;
@@ -132,13 +157,16 @@ footer {
     border-radius: 50%;
 }
 
-/* SPONSORS */
+/* =========================
+   SPONSORS
+========================= */
 .sponsors {
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
+
 .sponsor-grid {
     display: flex;
     flex-wrap: wrap;
@@ -160,6 +188,10 @@ footer {
     max-width: 100%;
     margin-bottom: 10px;
 }
+
+/* =========================
+   TIMELINE
+========================= */
 .timeline {
     border-left: 3px solid #2980b9;
     padding-left: 20px;
@@ -180,76 +212,16 @@ footer {
     background: #2980b9;
     border-radius: 50%;
 }
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-}
 
-/* LOGO ROW */
+/* =========================
+   LOGO BAR
+========================= */
 .logo-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-/* MAIN LOGO */
-.main-logo img {
-    width: 100px;
-    height: auto;
-}
-
-/* INSTITUTION LOGOS */
-.institution-logos {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.institution-logos img {
-    height: 50px;
-    background: white;
-    padding: 5px;
-    border-radius: 5px;
-}
-.hero {
-    position: relative;
-    padding: 100px 20px;
-    color: white;
-    text-align: center;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6f/Chimborazo_Ecuador.jpg');
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-/* TRANSPARENT OVERLAY */
-.hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 1;
-}
-
-/* CONTENT ABOVE OVERLAY */
-.hero *:not(.overlay) {
-    position: relative;
-    z-index: 2;
-}
-
-/* LOGO BAR */
-.logo-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
 }
 
 .main-logo img {
@@ -268,20 +240,4 @@ footer {
     background: white;
     padding: 5px;
     border-radius: 5px;
-}
-
-/* BUTTONS ON DARK BACKGROUND */
-.btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background: #e67e22;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background: #cf711f;
 }
