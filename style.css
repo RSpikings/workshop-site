@@ -139,3 +139,24 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.sponsor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sponsor-card {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.sponsor-card img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
