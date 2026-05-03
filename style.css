@@ -1,4 +1,3 @@
-
 /* =========================
    BASE
 ========================= */
@@ -14,16 +13,19 @@ body {
 ========================= */
 .hero {
     position: relative;
-    background: url('Boudinaged-wide-shear-zone.jpg');
+    background-image: url("Boudinaged-wide-shear-zone.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
     color: white;
     text-align: center;
     padding: 100px 20px;
+
     overflow: hidden;
 }
 
-/* OVERLAY */
+/* DARK OVERLAY */
 .hero .overlay {
     position: absolute;
     inset: 0;
@@ -32,12 +34,22 @@ body {
 }
 
 /* CONTENT ABOVE OVERLAY */
-.hero h1,
-.hero p,
-.hero .btn,
-.hero .logo-bar {
+.hero * {
     position: relative;
     z-index: 2;
+}
+
+/* SMOOTH TRANSITION INTO NEXT SECTION */
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #1c2a3a);
+    z-index: 1;
+    pointer-events: none;
 }
 
 /* =========================
@@ -137,7 +149,7 @@ footer {
 }
 
 /* =========================
-   CARDS (SPEAKERS)
+   CARDS
 ========================= */
 .cards {
     display: flex;
@@ -204,21 +216,20 @@ footer {
 }
 
 /* =========================
-   TIMELINE (PREVIOUS)
+   PREVIOUS (TIMELINE)
 ========================= */
 #previous {
     background: linear-gradient(135deg, #1c2a3a, #111a24);
-    color: #ffffff;
+    color: white;
     padding: 70px 20px;
 }
 
 #previous h2 {
     text-align: center;
     margin-bottom: 40px;
-    font-size: 2em;
 }
 
-/* TIMELINE CONTAINER */
+/* TIMELINE */
 .timeline {
     position: relative;
     max-width: 900px;
@@ -227,7 +238,7 @@ footer {
     border-left: 3px solid #4aa3df;
 }
 
-/* EACH EVENT */
+/* EVENT */
 .event {
     position: relative;
     margin-bottom: 40px;
@@ -243,7 +254,7 @@ footer {
     background: rgba(255, 255, 255, 0.08);
 }
 
-/* DOT ON TIMELINE */
+/* DOT */
 .event::before {
     content: "";
     position: absolute;
@@ -256,13 +267,12 @@ footer {
     box-shadow: 0 0 0 4px rgba(74, 163, 223, 0.2);
 }
 
-/* TITLE */
+/* TEXT */
 .event h3 {
     margin: 0 0 10px;
     color: #4aa3df;
 }
 
-/* TEXT */
 .event p {
     margin: 5px 0;
     color: #e0e6ef;
